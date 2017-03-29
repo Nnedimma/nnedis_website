@@ -43,6 +43,23 @@
 		    -o-background-size: cover;
 		    background-size: cover;			
 		}
+   		.blackstroke_and_shadow {
+			-webkit-text-stroke: 1px black;
+		    text-shadow:
+		       3px  3px 0 #000,
+		      -1px -1px 0 #000,  
+		       1px -1px 0 #000,
+		      -1px  1px 0 #000,
+		       1px  1px 0 #000;    		
+   		}
+
+   		.book_synopsis {
+			font-size: 22pt; 
+			text-align: left;   			
+    		font-family: 'Oswald', sans-serif;
+    		font-weight: 700;
+    		color: white/*#333;*/
+   		}		
     </style>    
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -75,17 +92,17 @@
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row">
-				<h1>Long Juju Man</h1>
+				<h1 class="blackstroke_and_shadow">Long Juju Man</h1>
 			</div>
 			<div class="row">
 				<h2 style="color: white">Winner of the Macmillan Writers' Prize for Africa</h2>
 			</div>
-			<div class="row vertical-align" style="padding-top: 100px">
+			<div class="row vertical-align" style="padding-top: 80px">
 				<div class="col-lg-3">
 					<img src="../main/assets/img/book_covers/long_juju_man_carousel.jpg" width="200px">
 					<p><a href="https://www.amazon.com/Long-Juju-Man-Nnedi-Okorafor/dp/0230722075/ref=pd_sim_b_7?ie=UTF8&refRID=0BSGY8HT36WAGZQ9NMQN"><img src="assets/img/amazon-buy.gif" alt="Buy on Amazon"/></a></p>
 				</div>
-				<div class="col-lg-9" style="font-family: 'Oswald', sans-serif; font-weight: 700; color: white; font-size: 18pt; text-align: left">
+				<div class="col-lg-9 book_synopsis blackstroke_and_shadow">
 					<p>Should I run? I thought.</p>
 					<p>A ghost can run faster than me.</p>
 					<p>No, I won't run. Ngoli has heard many stories about Long Juju Man from her grandfather. But she is not prepared for her first meeting with him in the forest, or for the strange friendship which follows...</p>
