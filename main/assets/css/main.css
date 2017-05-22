@@ -599,6 +599,63 @@ a:after {
    MEDIA QUERIES
    ========================================================================== */
 
+/*
+  See issue with Navbar collapsing on small devices: 
+  http://stackoverflow.com/questions/23347701/twitter-bootstrap-3-how-to-activate-navbar-collapse-on-small-devices; 
+*/
+
+@media only screen and (max-width: 640px) {
+    /* Styling for Bootstrap small & extra-small devices */    
+    #greywrap {
+        background: #f5f5f5;
+        margin-top: 0px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        padding-top: 0px;
+    }    
+    #nnedi_portrait {
+        display: none;
+    }
+    .bx-wrapper {
+        margin-left: -165px
+    }
+
+    h1 {
+        font-size: 250%;
+        padding-bottom: -20px;
+    }
+
+    #mobile_top_header {
+        display: block;
+        font-size: 80%;
+    }
+
+    #bottom_header {
+        display: none;
+    }
+
+    .blurb_text {
+        font-size: 75%;
+    }
+
+    #contact {
+        font-size: 60%;
+    }
+
+    h3 {
+        font-size: 90%;
+    }
+
+    #contact_desktop_tablet {
+        display: none;
+    }
+
+    #contact_mobile p {
+        line-height: 28px;
+        margin-bottom: 0px;
+    }
+
+}
 
 @media screen and (max-width:1050px), screen and (max-device-width:1050px){
 	body .header{background-attachment: scroll;}
@@ -631,9 +688,12 @@ a:after {
     #nnedi_portrait {
         width: 500px;
     }    
+    #mobile_top_header, #contact_mobile {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+@media only screen and (min-width: 640px) and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     /* (768x1024) iPad 1 & 2, Portrait */    
     #greywrap {
         background: #f5f5f5;
@@ -646,10 +706,17 @@ a:after {
         width: 400px;
         margin-top: -110px;
     }
+    #mobile_top_header, #contact_mobile {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
     #nnedi_portrait {
         width: 500px;
     }    
+    #mobile_top_header, #contact_mobile {
+        display: none;
+    }
 }
+
