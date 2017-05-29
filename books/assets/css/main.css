@@ -357,3 +357,24 @@ a:after {
 }
 
 
+@media only screen and (min-width: 640px) {
+	.book_content_mobile { display: none; }
+}
+
+@media only screen and (max-width: 640px) {
+	#headerwrap h1 {
+		/*margin-top: 150px;*/
+		color: white;
+		font-size: 250%;
+		font-weight: 700;
+	}	
+	h2 {
+        font-size: 115%;
+    }
+    .book_co_header {
+    	font-size: 200%;
+    }
+    .book_content_desktop { display: none; }
+    .section_content p { font-size: 100%; }
+    .book_image {width: 150px;}
+}
