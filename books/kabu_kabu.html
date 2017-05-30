@@ -49,12 +49,24 @@
     		font-family: 'Oswald', sans-serif;
     		font-weight: 700;
     		color: #333;
-   		}		
+   		}	
    		.neuton {
    			font-family: 'Neuton', serif;
    			font-weight: 800;
     		color: white;
+    		font-size: 20pt; 
    		}	
+		@media only screen and (max-width: 640px) {
+			#headerwrap {
+				background: black;
+			}
+			h2 {
+				padding-top: 0px
+			}
+			.neuton {
+				font-size: 100%;
+			}
+		}   		
    		.black_stroke_and_shadow {
 			-webkit-text-stroke: 1px black;
 		    text-shadow:
@@ -100,15 +112,28 @@
 				<h1 class="thin_drop_shadow text_strok">Kabu</h1>
 			</div>
 			<div class="row">
-				<h2 style="color: white;padding-top: 120px">Finalist for the Locus Award for Best Collection</h2>
+				<h2 style="color: white">Finalist for the Locus Award for Best Collection</h2>
 			</div>
-			<div class="row vertical-align">
+			<div class="row vertical-align book_content_desktop">
 				<div class="col-lg-3">
-					<img src="../main/assets/img/book_covers/kabu_kabu_carousel.jpg" width="200px">
+					<img src="../main/assets/img/book_covers/kabu_kabu_carousel.jpg" class="book_image" width="200px">
 					<p><a href="http://www.amazon.com/Kabu-Nnedi-Okorafor/dp/160701405X/ref=sr_1_1?ie=UTF8&qid=1396637563&sr=8-1"><img src="assets/img/amazon-buy.gif" alt="Buy on Amazon"/></a></p>
 				</div>
 				<div class="col-lg-9">
-					<p class="neuton" style="font-size: 20pt; text-align: left;">Kabu Kabu - unregistered, illegal Nigerian taxis - generally get you where you need to go, but Nnedi Okorafor's Kabu Kabu takes the reader to exciting, fantastic, magical, occasionally dangerous, and always imaginative locations. This debut short story collection by award-winning author Nnedi Okorafor includes notable previously-published short work, a new novella co-written with New York Times bestselling author Alan Dean Foster, and a brief forward by Whoopi Goldberg.</p>
+					<p class="neuton" style="text-align: left;">Kabu Kabu - unregistered, illegal Nigerian taxis - generally get you where you need to go, but Nnedi Okorafor's Kabu Kabu takes the reader to exciting, fantastic, magical, occasionally dangerous, and always imaginative locations. This debut short story collection by award-winning author Nnedi Okorafor includes notable previously-published short work, a new novella co-written with New York Times bestselling author Alan Dean Foster, and a brief forward by Whoopi Goldberg.</p>
+				</div>
+			</div>
+			<div class="book_content_mobile">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<img src="../main/assets/img/book_covers/kabu_kabu_carousel.jpg" class="book_image" width="200px">
+						<p><a href="http://www.amazon.com/Kabu-Nnedi-Okorafor/dp/160701405X/ref=sr_1_1?ie=UTF8&qid=1396637563&sr=8-1"><img src="assets/img/amazon-buy.gif" alt="Buy on Amazon"/></a></p>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12">
+						<p class="neuton" style="text-align: left;">Kabu Kabu - unregistered, illegal Nigerian taxis - generally get you where you need to go, but Nnedi Okorafor's Kabu Kabu takes the reader to exciting, fantastic, magical, occasionally dangerous, and always imaginative locations. This debut short story collection by award-winning author Nnedi Okorafor includes notable previously-published short work, a new novella co-written with New York Times bestselling author Alan Dean Foster, and a brief forward by Whoopi Goldberg.</p>
+					</div>					
 				</div>
 			</div>
 		</div><!-- /container -->

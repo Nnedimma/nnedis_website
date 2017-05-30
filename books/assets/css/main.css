@@ -359,6 +359,31 @@ a:after {
 
 @media only screen and (min-width: 640px) {
 	.book_content_mobile { display: none; }
+	#headerwrap {
+			margin-top: -10px;
+			padding-top:20px;
+			text-align:center;
+			background-attachment: relative;
+			background-position: center center;
+			min-height: 700px;
+			width: 100%;
+			
+		    -webkit-background-size: 100%;
+		    -moz-background-size: 100%;
+		    -o-background-size: 100%;
+		    background-size: 100%;
+
+		    -webkit-background-size: cover;
+		    -moz-background-size: cover;
+		    -o-background-size: cover;
+		    background-size: cover;
+	}
+	.oswald {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		color: white;
+		font-size: 12pt
+	}
 }
 
 @media only screen and (max-width: 640px) {
@@ -375,6 +400,16 @@ a:after {
     	font-size: 200%;
     }
     .book_content_desktop { display: none; }
-    .section_content p { font-size: 100%; }
+    .section_content, .book_description p { font-size: 100%; }
+    .section_content h3 {
+    	font-size: 110%;
+    }
     .book_image {width: 150px;}
+	.oswald {
+		font-family: 'Oswald', sans-serif;
+		font-weight: 700;
+		color: white;
+		font-size: 90%
+	}   	
+	p { margin-bottom: 0px; }	
 }
