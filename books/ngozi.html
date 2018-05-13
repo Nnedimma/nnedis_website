@@ -62,6 +62,15 @@
    			margin-left: 40px;
    			font-family: 'Tillana', cursive;
    		}
+
+   		.book_image_small {width: 200px}
+   		.book_image_medium {width: 500px}
+
+		@media only screen and (max-width: 640px) {
+			.book_image_small { width: 50px }
+			.book_image_medium { width: 100px }
+		}
+
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -135,24 +144,29 @@
 			<p class="centered">
 				<i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i>
 			</p>
-			<div class="row vertical-align">
-				<div class="col-lg-4">
-					<a href="#" data-featherlight="assets/img/ngozi_image_1.png"><img src="assets/img/ngozi_image_1.png" style="width: 250px"/></a>
+			<div class="row vertical-align" style="text-align: center">
+				<div class="col-lg-4 col-4">
+					<a href="#" data-featherlight="assets/img/ngozi_image_1.png"><img src="assets/img/ngozi_image_1.png" class="book_image_small"/></a>
 				</div>
-				<div class="col-lg-4">
-					<a href="#" data-featherlight="assets/img/ngozi_image_4.jpeg"><img src="assets/img/ngozi_image_4.jpeg" style="width: 250px"/></a>
+				<div class="col-lg-4 col-4">
+					<a href="#" data-featherlight="assets/img/ngozi_image_4.jpeg"><img src="assets/img/ngozi_image_4.jpeg" class="book_image_small"/></a>
 				</div>
-				<div class="col-lg-4">
-					<a href="#" data-featherlight="assets/img/ngozi_image_3.jpeg"><img src="assets/img/ngozi_image_3.jpeg" style="width: 200px"/></a><br><br>
-					<a href="#" data-featherlight="assets/img/ngozi_image_2.jpeg"><img src="assets/img/ngozi_image_2.jpeg" style="width: 200px"/></a>
+				<div class="col-lg-4 col-4">
+					<p>
+						<a href="#" data-featherlight="assets/img/ngozi_image_3.jpeg"><img src="assets/img/ngozi_image_3.jpeg" class="book_image_small"/></a>
+					</p>
+					<p style="padding-top: 5px">
+						<a href="#" data-featherlight="assets/img/ngozi_image_2.jpeg"><img src="assets/img/ngozi_image_2.jpeg" class="book_image_small"/></a>
+					</p>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<a href="#" data-featherlight="assets/img/ngozi_image_5.png"><img src="assets/img/ngozi_image_5.png" style="width: 500px"/></a><br>
+			<br/>
+			<div class="row vertical-align" style="text-align: center">
+				<div class="col-lg-6 col-6">
+					<a href="#" data-featherlight="assets/img/ngozi_image_5.png"><img src="assets/img/ngozi_image_5.png" class="book_image_medium"/></a>
 				</div>
-				<div class="col-lg-6">
-					<a href="#" data-featherlight="assets/img/ngozi_image_6.png"><img src="assets/img/ngozi_image_6.png" style="width: 500px"/></a><br>
+				<div class="col-lg-6 col-6">
+					<a href="#" data-featherlight="assets/img/ngozi_image_6.png"><img src="assets/img/ngozi_image_6.png" class="book_image_medium"/></a>
 				</div>
 			</div>
 			<p class="centered">
