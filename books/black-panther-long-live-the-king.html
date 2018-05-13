@@ -48,7 +48,22 @@
     		font-family: 'Oswald', sans-serif;
     		font-weight: 700;
     		color: white;
+    		text-align: right
    		}
+   		.comixology_logo { width: 176px }
+   		.comic_cover_bottom_padding { margin-bottom: 120px }
+   		.comic_cover_top_padding { margin-top: 30px }
+		@media only screen and (max-width: 1200px) {
+			.book_image { width: 200px }
+		}
+		@media only screen and (max-width: 640px) {
+			.book_image { width: 50px }
+			.comixology_logo { width: 20px }
+			.amazon_buy_button { width: 20px }
+			h2 { font-size:8pt; text-align: center }
+			.comic_cover_bottom_padding { margin-bottom: 50px }
+			.comic_cover_top_padding { margin-top: 10px }
+		}
     </style>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -66,7 +81,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="thick_drop_shadow text_stroke oswald" style="margin-top: 250px">Black Panther: Long Live the King</h1>
-				<h2 style="text-align: right" class="drop_shadow text_stroke">Written by Nnedi Okorafor, illustrated by André Lima Araújo</h2>
+				<h2 class="drop_shadow text_stroke">Written by Nnedi Okorafor, illustrated by André Lima Araújo</h2>
 			</div>
 			<!--div class="row" style="padding-top: 70px; font-weight: 700">
 				<h2 class="drop_shadow">Finalist for the Andre Norton Award for Best Young Adult Science Fiction and Fantasy</h2>
@@ -84,19 +99,26 @@
 	<div class="section_content">
 		<div class="container">
 			<div class="row book_co_header"></div>
-			<div class="row book_content_desktop">
-				<div class="col-lg-4" style="margin-top: 20px">
-					<img src="assets/img/long-live-the-king-1.jpeg" class="book_image" width="300px">
-					<p title="Compilation"><a href="https://www.amazon.com/Black-Panther-Marvel-Premiere-Graphic/dp/1302905384/ref=sr_1_3"><img src="assets/img/amazon-buy.gif" alt="Buy Compilation on Amazon"/></a></p>
-					<p title="Issue 1"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B076132VHK/ref=sr_1_1"><img src="assets/img/comixology_buy.jpg" style="width: 176px" alt="Buy Issue 1 on Comixology"/></a></p>
+			<div class="row vertical-align">
+				<div class="col-lg-3 col-3 col-sm-3 col-md-3" style="margin-top: 20px">
+					<p class="comic_cover_top_padding"></p>
+					<img src="assets/img/long-live-the-king-1.jpeg" class="book_image" width="250px"/>
+					<p title="Compilation"><a href="https://www.amazon.com/Black-Panther-Marvel-Premiere-Graphic/dp/1302905384/ref=sr_1_3"><img src="assets/img/amazon-buy.gif" class="amazon_buy_button" alt="Buy Compilation on Amazon"/></a></p>
+					<p title="Issue 1"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B076132VHK/ref=sr_1_1"><img src="assets/img/comixology_buy.jpg" class="comixology_logo" alt="Buy Issue 1 on Comixology"/></a></p>
 				</div>
-				<div class="col-lg-4" style="margin-top: 20px">
-					<img src="assets/img/long-live-the-king-2.jpeg" class="book_image" width="300px">
-					<p title="Issue 2" style="margin-top: 20px"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B076139JXH/ref=sr_1_3"><img src="assets/img/comixology_buy.jpg" style="width: 176px" alt="Buy Issue 2 on Comixology"/></a></p>
+				<div class="col-lg-3 col-3 col-sm-3 col-md-3" style="margin-top: 20px">
+					<img src="assets/img/long-live-the-king-2.jpeg" class="book_image" width="250px"/>
+					<p title="Issue 2" style="margin-top: 20px"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B076139JXH/ref=sr_1_3"><img src="assets/img/comixology_buy.jpg" class="comixology_logo" alt="Buy Issue 2 on Comixology"/></a></p>
 				</div>				
-				<div class="col-lg-4" style="margin-top: 20px">
-					<img src="assets/img/long-live-the-king-3.jpeg" class="book_image" width="300px">
-					<p title="Issue 5" style="margin-top: 20px"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B07613D43T/ref=sr_1_4"><img src="assets/img/comixology_buy.jpg" style="width: 176px" alt="Buy Issue 5 on Comixology"/></a></p>
+				<div class="col-lg-3 col-3 col-sm-3 col-md-3" style="margin-top: 20px">
+					<img src="assets/img/long-live-the-king-3.jpeg" class="book_image" width="250px"/>
+					<p title="Issue 5" style="margin-top: 20px"><a href="https://www.amazon.com/Black-Panther-Long-Live-2017-2018-ebook/dp/B07613D43T/ref=sr_1_4"><img src="assets/img/comixology_buy.jpg" class="comixology_logo" alt="Buy Issue 5 on Comixology"/></a></p>
+				</div>
+				<div class="col-lg-3 col-3 col-sm-3 col-md-3" style="margin-top: 20px">
+					<a href="ngozi.html" title="Black Panther: Long Live the King #6 - Under the Bridge (Ngozi)">
+						<img src="assets/img/bp-long-live-king-ep6-cover.jpg" class="book_image" width="250px"/>
+					</a>
+					<p class="comic_cover_bottom_padding"></p>
 				</div>
 			</div>
 			<!--div class="book_content_mobile">
