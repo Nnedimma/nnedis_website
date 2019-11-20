@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nnedi Okorafor's website">
+    <meta name="author" content="Chimezie Ogbuji">
+
+    <title>Nnedi's Website</title>
+
+    <link rel="canonical" href="http://nnedi.com"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="main/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="main/assets/css/main_new.css" rel="stylesheet">
+    <link rel="stylesheet" href="main/assets/css/icomoon.css">
+    <link href="main/assets/css/animate-custom.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="main/font-awesome/css/font-awesome.min.css">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <!-- Background opacity tutorial: https://love2dev.com/blog/responsive-hero-background-opacity/ -->
+
+    <style type="text/css">
+                a { color: darkcyan }
+                h1 { font-weight: 800 }
+		#main::before {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center center;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: -2;
+		}
+		#main::after {
+			background-color: #F0D6A5;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			z-index: -1;
+			opacity: 0.6;
+	        }
+        .vertical-align {
+            display: flex;
+            align-items: center;
+        }               
+    </style>
+    
+    <script src="main/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="main/assets/js/modernizr.custom.js"></script>
+
+	<script type="application/ld+json">
+		{
+		    "@context": "http://schema.org",
+		    "@graph": [
+				{
+			      "@context": "http://schema.org",
+			      "@type": "Person",
+			      "email": "mailto:info@example.com",
+			      "image": "http://nnedi.com/main/assets/img/NnediPortrait.jpg",
+			      "jobTitle": "Full Professor",
+			      "name": "Nnedi Okorafor",
+			      "alumniOf": "University of Illinois",
+			      "gender": "female",
+			      "nationality": "African American",
+			      "url": "http://nnedi.com/",
+				  "sameAs" : [ "https://www.facebook.com/nnedi", "https://twitter.com/Nnedi", "https://www.instagram.com/nnediokorafor/",
+		                       "https://plus.google.com/u/0/+NnediOkorafor"]
+			    }    	
+		    ]
+		}	
+	</script>
+
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span style="font-size:18px; color:#3498db;"></span></a>
+			</div>
+			<div class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li> <a href="http://nnedi.blogspot.com" class="smoothScroll">Blog</a></li>
+				<li> <a href="books/online_fiction.html" class="smoothScroll">Online Fiction</a></li>
+				<li> <a href="#contact" class="smoothScroll">Contact</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</div>
+    </div>
+
+	<div id="main">
+
+  		<div class="row" id="home" name="home">
+			<div class="col-lg-12" style="background-color: black;  height: 40px"/>
+		</div>
+		<div id="greywrap">
+			<div class="row background_gradient" id="mobile_top_header">
+				<h1>Nnedi's Website</h1>
+			</div>		
+			<!--div class="row background_gradient vertical-align">
+				<div class="col-lg-3 col-md-3 col-xs-3">
+					<img id="nnedi_portrait" style="vertical-align: top" src="main/assets/img/NnediPortrait.jpg" alt="Nnedi's Portrait"/><br/>
+				</div>
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-offset-4 col-lg-offset-4 col-md-offset-4" style="padding-top: 20px">
+					<div class="row" style="">
+						<ul class="slides">
+							<li>
+								<a href="books/chicken_in_the_kitchen.html" target="_book"><img src="main/assets/img/book_covers/chicken_in_the_kitchen_carousel.jpg" title="Chicken in the Kitchen"/></a>
+							</li>
+							<li>
+								<a href="books/kabu_kabu.html" target="_book"><img src="main/assets/img/book_covers/kabu_kabu_carousel.jpg" title="Kabu Kabu"/></a>
+							</li>
+							<li>
+								<a href="books/akata.html" target="_book"><img src="main/assets/img/book_covers/akata_warrior_carousel.jpg" title="Akata Warrior"/></a>
+							</li>
+							<li>
+								<a href="books/akata.html" target="_book"><img src="main/assets/img/book_covers/akata_witch_carousel.jpg" title="Akata Witch"/></a>
+							</li>
+							<li>
+								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_night_masquerade_carousel.jpg" title="Binti: The Night Masquerade" /></a>
+							</li>							
+							<li>
+								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_home_carousel.jpg" title="Binti: Home" /></a>
+							</li>
+							<li>
+								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_carousel.jpg" title="Binti"/></a>
+							</li>
+							<li>
+								<a href="books/zahrah_the_windseeker.html" target="_book"><img src="main/assets/img/book_covers/zahrah_the_windseeker_carousel.jpg" title="Zahrah the Windseeker"/></a>
+							</li>
+							<li>
+								<a href="books/who_fears_death.html" target="_book"><img src="main/assets/img/book_covers/who_fears_death_carousel.jpg" title="Who Fears Death"/></a>
+							</li>
+							<li>
+								<a href="books/shadow_speaker.html" target="_book"><img src="main/assets/img/book_covers/the_shadow_speaker_carousel.jpg" title="The Shadow Speaker"/></a>
+							</li>
+							<li>
+								<a href="books/the_girl_with_the_magic_hands.html" target="_book"><img src="main/assets/img/book_covers/the_girl_with_the_magic_hands_carousel.jpg" title="The Girl with the Magic Hands"/></a>
+							</li>
+	                        <li>
+	                        	<a href="books/long_juju_man.html" target="_book"><img src="main/assets/img/book_covers/long_juju_man_carousel.jpg" title="Long Juju Man"/></a>
+                        	</li>
+							<li>
+								<a href="books/book_of_phoenix.html" target="_book"><img src="main/assets/img/book_covers/the_book_of_pheonix_carousel.jpg" title="The Book of Phoenix"/></a>
+							</li>
+							<li>
+								<a href="books/lagoon.html" target="_book"><img src="main/assets/img/book_covers/lagoon_carousel.jpg" title="Lagoon"/></a>
+							</li>
+							<li>
+								<a href="books/broken_places_outer_spaces.html" target="_book"><img src="main/assets/img/book_covers/broken_places_outer_spaces_carousel.jpg" title="Broken Places &amp; Outer Spaces"/></a>
+							</li>
+						</ul>					
+					</div>
+				</div>
+			</div-->
+			<div class="row background_gradient" id="bottom_header">
+				<h1 style="font-size: 100px;">Nnedi's Website</h1>
+			</div>
+		</div><!-- greywrap -->
+		
+		<!-- ==== ABOUT ==== -->
+		<div id="center_section">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-10 col-md-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-3 col-xs-offset-1 col-lg-offset-1" id="about">
+					<p class="blurb_text">Nnedi Okorafor is a Nigerian-American author of Africanfuturism and Africanjujuism for children 
+                                                              and adults. Her works include WHO FEARS DEATH (in development at HBO into a TV series), the 
+                                                              BINTI novella trilogy, THE BOOK OF PHOENIX, the AKATA books and LAGOON.  She is the winner of Hugo, 
+                                                              Nebula, World Fantasy, Locus and Lodestar Awards and her debut novel ZAHRAH THE WINDSEEKER won the 
+                                                              prestigious Wole Soyinka Prize for Literature. Her next novel, Ikenga, will be in stores August 2020.</p>
+                                        <p class="blurb_text">Nnedi has also written comics for Marvel, including BLACK PANTHER: LONG LIVE THE KING and WAKANDA FOREVER 
+                                                              (featuring the Dora Milaje) and the SHURI series, an Africanfuturist comic series LAGUARDIA (from Dark Horse) 
+                                                              and her short memoir BROKEN PLACES AND OUTER SPACES.  Nnedi is also cowriter the adaptation of Octavia Butler’s 
+                                                              WILD SEED with Viola Davis and Kenyan film director Wanuri Kahiu. Nnedi holds a PhD (literature) and two MAs 
+                                                              (journalism and literature). She lives with her daughter Anyaugo and family in Illinois.</p>
+					<p class="blurb_text">Nnedi’s books include:</p>
+
+					<ul>
+						<li>
+							<span style="font-weight: bold;"><a href="books/lagoon.html" target="_book">Lagoon</a></span><span> (a British Science Fiction Association Award finalist for Best Novel)</span>, <span style="text-decoration: underline">adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/who_fears_death.html" target="_book">Who Fears Death</a></span><span> (a World Fantasy Award winner for Best Novel)</span>, <span style="text-decoration: underline">adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/book_of_phoenix.html" target="_book">The Book of Phoenix</a></span><span> (an Arthur C. Clarke Award finalist)</span>, <span style="text-decoration: underline">adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/binti.html" target="_book">The Binti Trilogy</a></span><span> (the first of which won both the Hugo and Nebula Awards for Best Novella and the second which is a Hugo Award finalist)</span>, <span style="text-decoration: underline">adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/chicken_in_the_kitchen.html" target="_book">Chicken in the Kitchen</a></span><span> (winner of an Africana Book Award)</span>, <span style="text-decoration: underline">children</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/kabu_kabu.html" target="_book">Kabu Kabu</a></span><span> (A Publisher’s Weekly Best Book for Fall 2013)</span>, <span style="text-decoration: underline">adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/akata.html" target="_book">The Akata series</a></span><span> (Akata Witch and Akata Warrior, Akata Witch being an Amazon.com Best Book of the Year, Akata Warrior being a finalist for the World Science Fiction Society Award)</span>, <span style="text-decoration: underline">young adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/zahrah_the_windseeker.html" target="_book">Zahrah the Windseeker</a></span><span> (winner of the Wole Soyinka Prize for African Literature)</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/shadow_speaker.html" target="_book">The Shadow Speaker</a></span><span> (a CBS Parallax Award winner)</span>, <span style="text-decoration: underline">young adult</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/long_juju_man.html" target="_book">Long Juju Man</a></span><span> (winner of the Macmillan Writers' Prize for Africa)</span>, <span style="text-decoration: underline">middle grade</span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/broken_places_outer_spaces.html" target="_book">Broken Places &amp; Outer Spaces</a></span>
+						</li>
+					</ul>
+
+					<p class="blurb_text">Comics:</p>
+					<ul>
+						<li>
+							<span style="font-weight: bold;"><a href="books/laguardia.html" target="_book">LaGuardia (Dark Horse)</a></span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/black-panther-long-live-the-king.html" target="_book">Black Panther: Long Live the King (Marvel)</a></span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/shuri.html" target="_book">Shuri (Marvel)</a></span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="https://www.amazon.com/Wakanda-Forever-Nnedi-Okarafor/dp/1302913581">Wakanda Forever (Marvel)</a></span>
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/antar.html" target="_book">Antar: the Black Knight (IDW/Mirage Films)</a></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row background_gradient">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+					<iframe id="ted_talk_vid" width="560" height="315" src="https://www.youtube.com/embed/Mt0PiXLvYlU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="contact" name="contact" style="background-color: #EDD5A3">
+			<div class="row">
+				<hr>
+			</div>
+			<div id="contact_mobile">
+				<div class="row">
+					<div class="col-sm-1 col-xs-1"></div>
+					<div class="col-sm-10 col-xs-10">
+						<h3>To arrange all speaking engagements</h3>
+						<p>Dawn Stuart at Books in Common<br/><span class="icon icon-phone"></span> 541-318-6288 |
+							<span class="icon icon-envelop"></span> dawn[at]booksincommon.org
+						</p>
+					</div>					
+					<div class="col-sm-1 col-xs-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-1 col-xs-1"></div>
+					<div class="col-sm-10 col-xs-10">
+						<h3>For other inquiries</h3>
+						<p>Contact Nnedi's Literary Agent, Don Maass<br/>
+						<span class="icon icon-envelop"></span> dmaass[at]maassagency.com</p>
+					</div>					
+					<div class="col-sm-1 col-xs-1"></div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-1 col-xs-1"></div>
+					<div class="col-sm-10 col-xs-10">
+						<h3>Contact Nnedi on Social Media. </h3>
+						<a href="https://twitter.com/Nnedi"><span class="fa fa-twitter fa-2x"></span></a> 
+						<a href="https://www.facebook.com/nnedi"><span class="fa fa-facebook fa-2x"></span></a>
+						<a href="https://www.instagram.com/nnediokorafor/"><span class="fa fa-instagram fa-2x"></span></a><br/>
+					</div>					
+					<div class="col-sm-1 col-xs-1"></div>
+				</div>
+				
+			</div><!-- row -->						
+			<div class="row" id="contact_desktop_tablet">
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h3>To arrange all speaking engagements</h3>
+					<p>Dawn Stuart at Books in Common<br/><span class="icon icon-phone"></span> 541-318-6288 <br/>
+						<span class="icon icon-envelop"></span> dawn[at]booksincommon.org  <br/>
+					</p>
+				</div><!-- col -->
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<h3>For other inquiries</h3>
+					<p>Contact Nnedi's Literary Agent, Don Maass<br/><span class="icon icon-envelop"></span> dmaass[at]maassagency.com < br/></p>
+				</div><!-- col -->
+				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					
+					<h3>Contact Nnedi on Social Media</h3>
+					<a href="https://twitter.com/Nnedi"><span class="fa fa-twitter fa-4x"></span></a> 
+					<a href="https://www.facebook.com/nnedi"><span class="fa fa-facebook fa-4x"></span></a>
+					<a href="https://www.instagram.com/nnediokorafor/"><span class="fa fa-instagram fa-4x"></span></a><br/>
+
+				</div><!-- col -->
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+
+			</div><!-- row -->
+		
+		</div><!-- container -->
+
+		<div id="footerwrap">
+			<div class="container">
+				<h4>Created by <a href="http://metacognition.info">Metacognition</a> - Copyright 2014</h4>
+			</div>
+		</div>
+
+	</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
+
+	<script type="text/javascript" src="main/assets/js/bootstrap.min.js"></script>
+	<!--script type="text/javascript" src="main/assets/js/retina.js"></script-->
+	<script type="text/javascript" src="main/assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="main/assets/js/smoothscroll.js"></script>
+	<!--script type="text/javascript" src="assets/js/jquery-func.js"></script-->
+  </body>
+</html>
