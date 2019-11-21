@@ -630,6 +630,9 @@ a:after {
     .blurb_text {
         font-size: 75%;
     }
+    .larger_blurb_text {
+        font-size: 115%;
+    }
 
     #contact {
         font-size: 60%;
@@ -656,6 +659,15 @@ a:after {
         height: 300%;
     }
     #ted_talk_vid { width: 300px }
+}
+
+@media only screen and (min-width: 800px) {
+    .blurb_text {
+        font-size: 100%;
+    }
+    .larger_blurb_text {
+        font-size: 140%;
+    }
 }
 
 /*large mobile landscape*/
