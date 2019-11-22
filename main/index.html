@@ -14,7 +14,7 @@
     <link href="main/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="main/assets/css/main.css" rel="stylesheet">
+    <link href="main/assets/css/main_new.css" rel="stylesheet">
     <link rel="stylesheet" href="main/assets/css/icomoon.css">
     <link href="main/assets/css/animate-custom.css" rel="stylesheet">
 
@@ -24,15 +24,39 @@
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
 
+    <!-- Background opacity tutorial: https://love2dev.com/blog/responsive-hero-background-opacity/ -->
+
     <style type="text/css">
-    	.bx-viewport, .bx-wrapper {
-    		background-color: #EDD5A3
-    	}
-    	.bx-wrapper { border: none; text-align: center }
+                a { color: darkcyan }
+                h1 { font-weight: 800 }
+		#main::before {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: top center;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: -2;
+		}
+		#main::after {
+			background-color: #F0D6A5;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			z-index: -1;
+			opacity: 0.4;
+	        }
         .vertical-align {
             display: flex;
             align-items: center;
-        }               
+        }
     </style>
     
     <script src="main/assets/js/jquery.min.js"></script>
@@ -60,159 +84,78 @@
 		}	
 	</script>
 
-	<!-- BxSlider -->
-	<script type="text/javascript" src="main/assets/bxslider/dist/jquery.bxslider.min.js"></script>
-	<link href="main/assets/bxslider/dist/jquery.bxslider.css" rel="stylesheet" />
-
-	<script type="text/javascript">
-		$( document ).ready(function() {
-			var width = $(window).width();
-			if (width <= 768) {
-			  $('.slides').bxSlider({
-			  	"auto": true,
-			  	"slideWidth": 300,
-			  	"slideMargin": 10,
-			  	"stopAutoOnClick": true,
-			  	"randomStart": true,
-			  	"adaptiveHeight": false,
-			  	"touchEnabled": false
-			  });
-			} else {
-			  $('.slides').bxSlider({
-			  	"auto": true,
-			  	"slideWidth": 300,
-			  	"slideMargin": 10,
-			  	"stopAutoOnClick": true,
-			  	"randomStart": true,
-			  	"adaptiveHeight": true,
-			  	"touchEnabled": false
-			  });
-			}
-		});				
-	</script>
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
   	<div id="navbar-main">
       <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span style="font-size:18px; color:#3498db;"></span></a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#home" class="smoothScroll">Home</a></li>
-			<li> <a href="#books" class="smoothScroll">Books</a></li>
-			<li> <a href="http://nnedi.blogspot.com" class="smoothScroll">Blog</a></li>
-			<li> <a href="books/online_fiction.html" class="smoothScroll">Online Fiction</a></li>
-			<li> <a href="#contact" class="smoothScroll">Contact</a></li>
-        </div><!--/.nav-collapse -->
-      </div>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span style="font-size:18px; color:#3498db;"></span></a>
+			</div>
+			<div class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li> <a href="http://nnedi.blogspot.com" class="smoothScroll">Blog</a></li>
+				<li> <a href="books/online_fiction.html" class="smoothScroll">Online Fiction</a></li>
+				<li> <a href="#contact" class="smoothScroll">Contact</a></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</div>
     </div>
-    </div>
+
+	<div id="main">
 
   		<div class="row" id="home" name="home">
 			<div class="col-lg-12" style="background-color: black;  height: 40px"/>
 		</div>
-		<div id="greywrap">
-			<div class="row background_gradient" id="mobile_top_header">
-				<h1>Nnedi's Website</h1>
-			</div>		
-			<div class="row background_gradient vertical-align">
-				<div class="col-lg-3 col-md-3 col-xs-3">
-					<img id="nnedi_portrait" style="vertical-align: top" src="main/assets/img/NnediPortrait.jpg" alt="Nnedi's Portrait"/><br/>
-				</div>
-				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-offset-4 col-lg-offset-4 col-md-offset-4" style="padding-top: 20px">
-					<div class="row" style="">
-						<ul class="slides">
-							<li>
-								<a href="books/chicken_in_the_kitchen.html" target="_book"><img src="main/assets/img/book_covers/chicken_in_the_kitchen_carousel.jpg" title="Chicken in the Kitchen"/></a>
-							</li>
-							<li>
-								<a href="books/kabu_kabu.html" target="_book"><img src="main/assets/img/book_covers/kabu_kabu_carousel.jpg" title="Kabu Kabu"/></a>
-							</li>
-							<li>
-								<a href="books/akata.html" target="_book"><img src="main/assets/img/book_covers/akata_warrior_carousel.jpg" title="Akata Warrior"/></a>
-							</li>
-							<li>
-								<a href="books/akata.html" target="_book"><img src="main/assets/img/book_covers/akata_witch_carousel.jpg" title="Akata Witch"/></a>
-							</li>
-							<li>
-								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_night_masquerade_carousel.jpg" title="Binti: The Night Masquerade" /></a>
-							</li>							
-							<li>
-								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_home_carousel.jpg" title="Binti: Home" /></a>
-							</li>
-							<li>
-								<a href="books/binti.html" target="_book"><img src="main/assets/img/book_covers/binti_carousel.jpg" title="Binti"/></a>
-							</li>
-							<li>
-								<a href="books/zahrah_the_windseeker.html" target="_book"><img src="main/assets/img/book_covers/zahrah_the_windseeker_carousel.jpg" title="Zahrah the Windseeker"/></a>
-							</li>
-							<li>
-								<a href="books/who_fears_death.html" target="_book"><img src="main/assets/img/book_covers/who_fears_death_carousel.jpg" title="Who Fears Death"/></a>
-							</li>
-							<li>
-								<a href="books/shadow_speaker.html" target="_book"><img src="main/assets/img/book_covers/the_shadow_speaker_carousel.jpg" title="The Shadow Speaker"/></a>
-							</li>
-							<li>
-								<a href="books/the_girl_with_the_magic_hands.html" target="_book"><img src="main/assets/img/book_covers/the_girl_with_the_magic_hands_carousel.jpg" title="The Girl with the Magic Hands"/></a>
-							</li>
-	                        <li>
-	                        	<a href="books/long_juju_man.html" target="_book"><img src="main/assets/img/book_covers/long_juju_man_carousel.jpg" title="Long Juju Man"/></a>
-                        	</li>
-							<li>
-								<a href="books/book_of_phoenix.html" target="_book"><img src="main/assets/img/book_covers/the_book_of_pheonix_carousel.jpg" title="The Book of Phoenix"/></a>
-							</li>
-							<li>
-								<a href="books/lagoon.html" target="_book"><img src="main/assets/img/book_covers/lagoon_carousel.jpg" title="Lagoon"/></a>
-							</li>
-							<li>
-								<a href="books/broken_places_outer_spaces.html" target="_book"><img src="main/assets/img/book_covers/broken_places_outer_spaces_carousel.jpg" title="Broken Places &amp; Outer Spaces"/></a>
-							</li>
-						</ul>					
-						<!--img style="padding-top: 0px; width: 450px; text-align: center;" 
-						     src="main/assets/img/NnediLogo.png" 
-						     style="text-align: center;" alt="Nnedi's Logo"-->
-					</div>
-				</div>
-			</div>	
-			<div class="row background_gradient" id="bottom_header">
-				<h1 style="font-size: 100px;">Nnedi's Website</h1>
-			</div>
-		</div><!-- greywrap -->
-		
+
 		<!-- ==== ABOUT ==== -->
-		<div class="background_gradient">
+		<div id="center_section">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<hr>
+					<hr/>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/Mt0PiXLvYlU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div class="col-lg-10 col-md-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-2 col-xs-offset-1 col-lg-offset-1">
+					<br/>
+					<p class="larger_blurb_text">&quot;Let the reader beware that there is juju in this book.&quot; <br>
+						- The Obi Library Collective, Akata Warrior</p>
 				</div>
-			</div>			
+			</div>
 			<div class="row">
-				<div class="col-lg-10 col-md-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-3 col-xs-offset-1 col-lg-offset-1" id="about">
-					<p class="blurb_text">Nnedi Okorafor is an international award-winning novelist of African-based science fiction, fantasy and magical realism for both children and adults. Born in the United States to two Nigerian immigrant parents, Nnedi is known for weaving African culture into creative evocative settings and memorable characters. In a profile of Nnedi’s work titled, “Weapons of Mass Creation”, The New York Times called Nnedi’s imagination “stunning”.</p>
+				<div class="col-lg-10 col-md-10 col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-2 col-xs-offset-1 col-lg-offset-1" id="about">
+					<p class="blurb_text">Nnedi Okorafor is a Nigerian-American author of <a href="http://nnedi.blogspot.com/2019/10/africanfuturism-defined.html">Africanfuturism</a> and
+										  <a href="http://nnedi.blogspot.com/2019/10/africanfuturism-defined.html">Africanjujuism</a> for children and adults. Her works include
+						                  <a href="books/who_fears_death.html">WHO FEARS DEATH</a> (in development at HBO into a TV series), the
+						<a href="books/binti.html">BINTI novella trilogy</a>, <a href="books/book_of_phoenix.html">THE BOOK OF PHOENIX</a>, the
+						<a href="books/akata.html">AKATA books</a> and <a href="books/lagoon.html">LAGOON</a>.
+						                  She is the winner of Hugo, Nebula, World Fantasy, Locus and Lodestar Awards and her debut novel
+						<a href="books/zahrah_the_windseeker.html">ZAHRAH THE WINDSEEKER</a> won the
+						                  prestigious Wole Soyinka Prize for Literature. Her next novel, Ikenga, will be in stores August 2020.</p>
+					                      <p class="blurb_text">Nnedi has also written comics for Marvel, including <a
+												  href="books/black-panther-long-live-the-king.html">BLACK PANTHER: LONG LIVE THE KING</a> and WAKANDA FOREVER
+											  (featuring the Dora Milaje) and the <a href="books/shuri.html">SHURI series</a>, an Africanfuturist comic series
+											  <a href="books/laguardia.html">LAGUARDIA</a> (from Dark Horse)
+											  and her short memoir <a href="books/broken_places_outer_spaces.html">BROKEN PLACES AND OUTER SPACES</a>.  Nnedi is also cowriter the adaptation of Octavia Butler’s
+											  WILD SEED with Viola Davis and Kenyan film director Wanuri Kahiu. Nnedi holds a PhD (literature) and two MAs
+											  (journalism and literature). She lives with her daughter Anyaugo and family in Illinois.</p>
+					<span class="blurb_text">Nnedi’s books include:</span>
 
-					<p class="blurb_text">Nnedi’s books include:</p>
-
-					<ul>
+					<ul class="blurb_text">
 						<li>
 							<span style="font-weight: bold;"><a href="books/lagoon.html" target="_book">Lagoon</a></span><span> (a British Science Fiction Association Award finalist for Best Novel)</span>, <span style="text-decoration: underline">adult</span>
 						</li>
 						<li>
-							<span style="font-weight: bold;"><a href="books/who_fears_death.html" target="_book">Who Fears Death</a></span><span> (a World Fantasy Award winner for Best Novel)</span>, <span style="text-decoration: underline">adult<span>
+							<span style="font-weight: bold;"><a href="books/who_fears_death.html" target="_book">Who Fears Death</a></span><span> (a World Fantasy Award winner for Best Novel)</span>, <span style="text-decoration: underline">adult</span>
 						</li>
 						<li>
 							<span style="font-weight: bold;"><a href="books/book_of_phoenix.html" target="_book">The Book of Phoenix</a></span><span> (an Arthur C. Clarke Award finalist)</span>, <span style="text-decoration: underline">adult</span>
 						</li>
 						<li>
-							<span style="font-weight: bold;"><a href="books/binti.html" target="_book">The Binti Trilogy</a></span><span> (the first of which won both the Hugo and Nebula Awards for Best Novella and the second which is a Hugo Award finalist)</span>, <span style="text-decoration: underline">adult</span>
+							<span style="font-weight: bold;"><a href="books/binti.html" target="_book">The Binti Trilogy</a></span><span> (A Hugo, Nebula and Nommo Award winner for Best Novella and parts 2 and 3 are Hugo Award nominees)</span>
 						</li>
 						<li>
 							<span style="font-weight: bold;"><a href="books/chicken_in_the_kitchen.html" target="_book">Chicken in the Kitchen</a></span><span> (winner of an Africana Book Award)</span>, <span style="text-decoration: underline">children</span>
@@ -237,24 +180,36 @@
 						</li>
 					</ul>
 
-					<p class="blurb_text">Comics:</p>
-					<ul>
-						<li>
-							<span style="font-weight: bold;"><a href="books/black-panther-long-live-the-king.html" target="_book">Black Panther: Long Live the King (Marvel)</a></span>
-						</li>
-						<li>
-							<span style="font-weight: bold;"><a href="books/shuri.html" target="_book">Shuri (Marvel)</a></span>
-						</li>
-						<li>
-							<span style="font-weight: bold;"><a href="books/antar.html" target="_book">Antar: the Black Knight (IDW/Mirage Films)</a></span>
-						</li>
+					<span class="blurb_text">Comics:</span>
+					<ul class="blurb_text">
 						<li>
 							<span style="font-weight: bold;"><a href="books/laguardia.html" target="_book">LaGuardia (Dark Horse)</a></span>
 						</li>
 						<li>
+							<span style="font-weight: bold;"><a href="books/black-panther-long-live-the-king.html" target="_book">Black Panther: Long Live the King (Marvel)</a></span>: (Hugo Nominee for Best Novella)
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/shuri.html" target="_book">Shuri (Marvel)</a></span>: (A Nommo Award winner for Best Graphic Novel)
+						</li>
+						<li>
 							<span style="font-weight: bold;"><a href="https://www.amazon.com/Wakanda-Forever-Nnedi-Okarafor/dp/1302913581">Wakanda Forever (Marvel)</a></span>
-						</li>						
+						</li>
+						<li>
+							<span style="font-weight: bold;"><a href="books/antar.html" target="_book">Antar: the Black Knight (IDW/Mirage Films)</a></span>
+						</li>
 					</ul>
+
+                    <span class="blurb_text">Forthcoming:</span>
+					<ul class="blurb_text">
+						<li>
+							<span style="font-weight: bold;">Ikenga (Penguin Books/Viking)</span>: Due out in August 2020
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: center">
+					<iframe id="ted_talk_vid" width="560" height="315" src="https://www.youtube.com/embed/Mt0PiXLvYlU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -329,6 +284,7 @@
 			</div>
 		</div>
 
+	</div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
