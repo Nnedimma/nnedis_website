@@ -357,7 +357,7 @@ a:after {
 }
 
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 	.book_content_mobile { display: none; }
 	#headerwrap {
 			margin-top: -10px;
